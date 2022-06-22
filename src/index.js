@@ -48,8 +48,8 @@ const menu = newButton('menu');
 menu.addEventListener('change', updatePage);
 const contact = newButton('contact');
 contact.addEventListener('change', updatePage);
-contact.children[0].checked = true;
-contact.classList.add('selected');
+home.children[0].checked = true;
+home.classList.add('selected');
 
 const buttons = document.createElement('div');
 buttons.id = 'tabs';
@@ -58,4 +58,4 @@ buttons.appendChild(menu);
 buttons.appendChild(contact);
 
 body.appendChild(buttons);
-body.appendChild(contactPage());
+body.appendChild(homePage());
