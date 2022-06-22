@@ -10,12 +10,14 @@ body {
     flex-direction: column;
     align-items: center;
     border: 2px solid black;
+    border-radius: 8px;
 }
 
 h1 {
     font-size: 64px;
     font-family: "Brush Script MT", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";;
     margin: 24px;
+    align-self: center;
 }
 
 p {
@@ -35,6 +37,7 @@ p {
 .tab {
     appearance: none;
     margin: 0;
+    border-radius: 8px;
 }
 
 .selected {
@@ -53,3 +56,18 @@ label {
     border-bottom: 2px solid black;
 }
 
+.menu {
+    border: 2px solid blue;
+    margin: 5px;
+    width: 90%;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
